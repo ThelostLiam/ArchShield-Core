@@ -1,0 +1,5 @@
+# Virus Definitions File for ArchShield
+# Each entry has the following format:
+# Name|Signature|Hash|Size|Behavior
+ExampleVirus|41 22 AB 7F|65a8e27d8879283831b664bd8b7f0ad4|12345|Creates hidden files
+TrojanExample|12 45 EF 2A|3c6e0b8a9c15224a8228b9a98ca1531d|67890|Disables antivirus services
