@@ -1,0 +1,11 @@
+void quarantineFile(const std::string& filePath) {
+    std::cout << "Quarantining " << filePath << "..." << std::endl;
+
+    // Simulating file quarantine with logging
+    if (remove(filePath.c_str()) == 0) {
+        std::cout << "File quarantined: " << filePath << std::endl;
+        logQuarantineAction(filePath); // Logging function
+    } else {
+        std::cerr << "Failed to quarantine file: " << filePath << std::endl;
+    }
+}

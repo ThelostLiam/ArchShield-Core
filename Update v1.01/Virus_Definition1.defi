@@ -1,0 +1,33 @@
+# Virus Definitions for ArchShield Antivirus
+# Format: VirusName, Signature, Behavior, Protection
+
+# Ransomware Definitions
+LockBit
+- Signature: LOCKBIT_ENCRYPT
+- Behavior: Encrypts user files, modifies file extensions to .locked
+- Protection: Detects rapid file modification and alerts user
+
+BlackCat
+- Signature: BLACKCAT_ENCRYPT
+- Behavior: Dual-exfiltration, encrypts files with advanced AES-256 encryption
+- Protection: Monitors for unusual network activity and file access patterns
+
+Conti
+- Signature: CONTI_ENCRYPT
+- Behavior: Attempts to disable backup systems, encrypts files on user and network shares
+- Protection: Alerts user on unauthorized access to backup directories
+
+Hive
+- Signature: HIVE_ENCRYPT
+- Behavior: Encrypts files and threatens to leak sensitive data if ransom is unpaid
+- Protection: Detects known file extension changes and alerts user
+
+Evil Corp
+- Signature: EVILCORP_ENCRYPT
+- Behavior: Uses WastedLocker to encrypt files, demands ransom via Dark Web
+- Protection: Analyzes process behavior for known encryption methods
+
+Sodinokibi
+- Signature: SODINOKIBI_ENCRYPT
+- Behavior: Double extortion tactic, encrypts files and leaks data to pressure payment
+- Protection: Monitors for rapid file encryption and alerts user to potential threats

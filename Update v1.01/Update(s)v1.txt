@@ -1,0 +1,28 @@
+Update Summary - ArchShield Antivirus
+1. Update Log - update1.upd
+Date: 2024-10-16
+
+Bug Fixes:
+
+Fixed Memory Leak Issue: Resolved a memory leak in the performScan() function by ensuring proper deletion of dynamically allocated memory.
+Corrected Directory Traversal Logic: Updated the checkForMaliciousFiles() function to handle symbolic links effectively, preventing infinite loops during directory scanning.
+Improved Quarantine Mechanism: Enhanced the quarantineFile() function to verify file removal and log actions when files are quarantined.
+Features Added:
+
+Enhanced Malware Detection: Improved detection algorithms for known ransomware signatures, refining the scanning accuracy.
+User Notification System: Implemented a notification system to alert users during scans and when malware is detected, enhancing user experience.
+2. Virus Definitions - update_def.def
+Date: YYYY-MM-DD
+
+New Malware Definitions Added:
+
+Ransomware Variants:
+
+CryptoLocker: Encrypts user files and demands ransom in cryptocurrency.
+WannaCry: Exploits vulnerabilities to spread rapidly and encrypts files.
+Bug Fixes:
+
+Updated Malware Behaviors: Adjusted behavioral definitions for known malware to improve detection accuracy and response actions.
+General Improvements: Optimized existing definitions to enhance scanning performance and reduce false positives.
+3. Conclusion
+This update aims to enhance the overall performance and security of the ArchShield antivirus by addressing existing issues and improving malware detection capabilities. The addition of a user notification system further improves user interaction, ensuring they are informed during critical operations.
